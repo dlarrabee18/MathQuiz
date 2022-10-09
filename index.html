@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz</title>
+  </head>
+  <body onload=" onLoad()">
+    <script src="index.js"></script>
+    <div class="top-bar"></div>
+    <div class="main-cont">
+      <div id="cor-count"></div>
+      <div id="score"></div>
+      <div class="quiz-cont">
+        <span id="prompt">What is </span>
+        <form>
+          <label for="answer-box">Answer: </label
+          ><input type="number" id="answer-box" />
+        </form>
+        <div class="btn-cont">
+          <button id="btn-submit" onclick="checkVal();setNums();">Submit</button
+          ><button id="btn-nxt" onclick="setNums()">Next</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

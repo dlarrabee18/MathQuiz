@@ -1,0 +1,109 @@
+* {
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.top-bar {
+  position: fixed;
+  width: 100vw;
+  min-height: 80px;
+  max-height: 3rem;
+  background-color: rgb(33, 32, 32);
+}
+
+.main-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(21, 20, 20);
+  font-size: 1.8rem;
+}
+
+.quiz-cont {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(49, 48, 48);
+  min-width: 350px;
+  max-width: 500px;
+  max-height: 300px;
+  border-radius: 20px;
+}
+
+.btn-cont {
+  display: flex;
+  width: 100%;
+  min-height: 20%;
+  bottom: 0;
+}
+#btn-nxt {
+  border: none;
+  font-size: 1.25rem;
+  position: relative;
+  padding: 5px;
+  width: 50%;
+}
+#btn-nxt:hover {
+  transition: 0.2s;
+  background-color: rgb(103, 103, 103);
+  color: white;
+}
+#btn-submit {
+  border: none;
+  font-size: 1.25rem;
+  position: relative;
+  padding: 5px;
+  width: 50%;
+}
+#btn-submit:hover {
+  transition: 0.2s;
+  background-color: rgb(103, 103, 103);
+  color: white;
+}
+#prompt {
+  padding: 50px;
+  position: relative;
+}
+
+#num {
+  color: black;
+}
+
+#answer-box {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
+  transform: translateY(-4px);
+  border: none;
+  text-align: center;
+  font-size: 1.25rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+#cor-count {
+  position: absolute;
+  color: white;
+  transform: translateY(-115px);
+}
+
+#score {
+  position: absolute;
+  color: white;
+  transform: translateY(130px);
+}
