@@ -9,7 +9,7 @@
   </head>
   <body onload=" onLoad()">
     <script src="index.js"></script>
-    <div class="top-bar"></div>
+    <!-- <div class="top-bar"></div> -->
     <div class="main-cont">
       <div id="cor-count"></div>
       <div id="score"></div>
@@ -17,7 +17,7 @@
         <span id="prompt">What is </span>
         <form>
           <label for="answer-box">Answer: </label
-          ><input type="number" id="answer-box" />
+          ><input type="number" id="answer-box" autocomplete="off" />
         </form>
         <div class="btn-cont">
           <button id="btn-submit" onclick="checkVal();setNums();">Submit</button

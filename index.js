@@ -6,7 +6,17 @@ let num1 = 0,
   question = 0;
 
 let strNum = "What is ";
+let ansBox = document.getElementById("answer-box");
+document.addEventListener("keydown", usrEnter);
 
+function usrEnter(e) {
+  const keypress = e.key;
+  if (keypress == "Enter") {
+    e.preventDefault();
+    checkVal();
+    setNums();
+  }
+}
 function onLoad() {
   setNums();
 }
@@ -25,7 +35,6 @@ function setNums() {
 
 function checkVal() {
   usrAns = document.getElementById("answer-box").value;
-  console.log(usrAns);
   if (usrAns == ans) {
     count++;
     question++;
@@ -66,5 +75,3 @@ function getEquation() {
       return "ERROR!";
   }
 }
-
-/* code */
